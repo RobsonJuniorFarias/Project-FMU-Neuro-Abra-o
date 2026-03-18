@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background: #2ecc71;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #27ae60, #2ecc71);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #27ae60;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+/* ABOUT */
+.about {
+  padding: 40px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
