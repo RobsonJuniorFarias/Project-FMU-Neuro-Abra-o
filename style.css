@@ -1,0 +1,30 @@
+.container-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-neuroabraco {
+    height: 50px;
+}
+header {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  width: 100%;
+}
+body {
+    background-color: rgb(136, 99, 195);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
