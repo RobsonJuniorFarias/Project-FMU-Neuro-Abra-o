@@ -19,6 +19,9 @@ header {
 }
 body {
     background: linear-gradient(to right, #8ec5fc, #e0c3fc);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 * {
   margin: 0;
@@ -32,7 +35,8 @@ body {
   padding: 60px 80px;
   display: flex;
   justify-content: center;  /* horizontal */
-  align-items: center;      
+  align-items: center;  
+  margin-top: 90px;    
 }
 .hero-texto {
   max-width: 500px;
@@ -91,4 +95,16 @@ p {
 }
 h1 {
     font-size: 50px;
+}
+footer {
+  background: rgb(0, 119, 255);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+main {
+  flex: 1;
+}
+footer p {
+    color: white;
 }
