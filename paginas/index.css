@@ -1,0 +1,80 @@
+.container-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-neuroabraco {
+  height: 50px;
+}
+
+header {
+  background: white;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+body {
+      background: linear-gradient(to right, #8ec5fc, #e0c3fc);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  display: flex;
+  flex-direction: column; /* Faz os itens ficarem um embaixo do outro */
+  justify-content: center;
+  align-items: center;
+  text-align: center;     /* Garante que as linhas de texto também quebrem no centro */
+  min-height: 80vh;       /* Dá uma altura boa para a seção */
+}
+
+/* Container que segura todos os cards */
+.servicos {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 70px;          /* Espaço entre os cards */
+  padding: 40px;
+  flex-wrap: wrap;         /* Se não couber, pula para a linha de baixo */
+}
+
+/* O quadrado (Card) */
+.card {
+  width: 240px;            /* Largura do quadrado */
+  border: 1px solid #ddd;
+  border-radius: 15px;     /* Bordas arredondadas */
+  overflow: hidden;        /* Garante que a imagem não saia da borda arredondada */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar profundidade */
+  background-color: white;
+}
+
+/* Ajustando a imagem dentro do quadrado */
+.card-imagem img {
+  width: 100%;             /* A imagem ocupa toda a largura do card */
+  height: 150px;           /* Altura fixa para a parte da imagem */
+  object-fit: cover;       /* O segredo: a imagem preenche o espaço sem esticar */
+}
+
+/* Espaçamento do texto abaixo da imagem */
+.card-corpo {
+  padding: 20px;
+  text-align: left;
+}
+/* Seleciona o título que está dentro do card-corpo */
+.card-corpo h4 {
+  margin-bottom: 15px; /* Cria o espaço entre o título e o parágrafo */
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
