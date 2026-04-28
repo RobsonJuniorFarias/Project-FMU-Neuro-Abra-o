@@ -467,6 +467,25 @@ footer {
   width: 100%
 }
 
+#locais {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #111;
+}
+
+#locais h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#locais .locais-subtitulo {
+  font-size: 1.05em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
 
 .footer-content p {
   margin: 5px 0;
