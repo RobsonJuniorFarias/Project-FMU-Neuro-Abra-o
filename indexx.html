@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* ─────────────────────────────────────────────────────
+   CABEÇALHO
+   Header fixo no topo da tela, sempre visível durante
+   a rolagem. z-index alto garante que fique sobre
+   qualquer outro elemento da página.
+───────────────────────────────────────────────────── */
+header { 
+  height: var(--header-height); 
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 55px;
+  height: 50px;
+}
+
+.site-name {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+.nav-links {
+  list-style: none; 
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none; 
+  color: #313131;
+  font-size: 20px;
+  text-transform: capitalize; 
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover { 
+  color: #4a90e2;
+}
+body {
+  background: linear-gradient(to right, #9ae0fd, #f5c8cc);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card-name ul {
+  display: flex;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.cx-principal {
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin:  40px auto;
+    max-width: 800px;
+    margin-top: 10px
+}
+.card-contato {
+  background: linear-gradient(to right, #e6f7ea, #c1d2c4);
+  padding: 12px 25px;
+  border-radius: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.card-contato h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-contato p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cx-membros {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin:  40px auto;
+  max-width: 800px;
+  margin-top: 10px
+}
+
+.card-name ul {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
+
+.membro {
+  background: #f5f7fa;
+  padding: 15px;
+  border-radius: 12px;
+
+  width: 200px;
+  
+  display: flex;
+  flex-direction: column; 
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.email {
+  font-size: 14px;
+  color: gray;
+}
+
+footer {
+  background: rgb(0, 119, 255);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  margin-top: 80px;
+}
+
+footer p {
+  color: white;
+}
+</style>
+<body>
+    <header> 
+  <nav class="navbar">
+    <div class="logo-area" onclick="mostrarPagina('index')" style="cursor: pointer;"> <!-- Logo clicável que redireciona para a página inicial -->
+    <img src="img/logo-neuroabraco.png" alt="Logo Neuro Abraço">
+    <span class="site-name">Neuro abraço</span>
+    </div>
+    <ul class="nav-links"> <!-- Links de navegação — cada um chama mostrarPagina() -->
+      <li><a href="#" onclick="mostrarPagina('index')">home</a></li>
+      <li><a href="#" onclick="mostrarPagina('servicos')">serviços</a></li>
+      <li><a href="#" onclick="mostrarPagina('quem-somos')">quem somos</a></li>
+      <li><a href="#" onclick="mostrarPagina('contato')">contato</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+    <section id="contato" class="pagina" style="display:none;">
+    <div class="cx-principal">
+        <h1>Contato</h1>
+        <p>Entre em contato com o projeto ou diretamente com os membros da equipe.</p>
+    <div class="card-contato">    
+        <h3>Contato do projeto:</h3>
+        <p>neuroabracofmu@gmail.com</p>
+    </div>
+    </div>
+    </section>
+    <section>
+    <div class="cx-membros">
+        <h1>Contato dos membros</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eligendi ullam dolorum nisi est doloremque perferendis eos quas veritatis corporis. Rerum libero a nulla delectus! Maiores ratione odio nemo quae?</p>
+    <div class="card-name">    
+        <ul>
+            <li class="membro">
+            <span class="nome">Nadia</span>
+            <span class="email">rtv.nadia@gmail.com</span></li>
+             <li class="membro">
+            <span class="nome">Robson Junior</span>
+            <span class="email">fariasjuniorrobson@gmail.com</span></li>
+             <li class="membro">
+            <span class="nome">Nadia</span>
+            <span class="email">rtv.nadia@gmail.com</span></li>
+             <li class="membro">
+            <span class="nome">Nadia</span>
+            <span class="email">rtv.nadia@gmail.com</span></li>
+             <li class="membro">
+            <span class="nome">Nadia</span>
+            <span class="email">rtv.nadia@gmail.com</span></li>
+             <li class="membro">
+            <span class="nome">Nadia</span>
+            <span class="email">rtv.nadia@gmail.com</span></li>
+             <li class="membro">
+            <span class="nome">Nadia</span>
+            <span class="email">rtv.nadia@gmail.com</span></li>           
+        </ul>
+    </div>
+    </div>
+    </section>
+    </main>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2026 Neuro Abraço - Todos os direitos reservados</p>
+    <p>Email: neuroabracofmu@gmail.com | São Paulo - Brasil</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -24,7 +24,7 @@ header {
 }
 
 main {
-  margin-top: 75px; /* compensa a altura do header fixo */
+  margin-top: 120px; /* compensa a altura do header fixo */
 }
 
 body{
@@ -662,4 +662,65 @@ footer { /* Rodapé */
 .footer-content p {
   margin: 5px 0;
   font-size: 14px;
+}
+#contato .cx-principal {
+  background: white;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+#contato .card-contato {
+  background: linear-gradient(to right, #e6f7ea, #c1d2c4);
+  padding: 12px 25px;
+  border-radius: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+#contato .card-contato h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#contato .card-contato p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#contato .cx-membros {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+#contato .card-name ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#contato .membro {
+  background: #f5f7fa;
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contato .nome {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#contato .email {
+  font-size: 14px;
+  color: gray;
 }
