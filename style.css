@@ -724,3 +724,13 @@ footer { /* Rodapé */
   font-size: 14px;
   color: gray;
 }
+.cxa-principal {
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin:  40px auto;
+    max-width: 800px;
+    margin-top: 350px;
+    margin-bottom: 310px;
+    align-items: center;
+}
